@@ -14,14 +14,14 @@
 <main class="w-full h-screen m-auto">
 <header class="h-auto m-auto bg-white py-7 px-3">
   <nav class="flex justify-between items-center p">
-    <img class="w-1/4" src="images/logo.svg" alt="">
+    <img class="w-1/4 md:w-1/6" src="images/logo.svg" alt="">
     <img class="w-13" src="images/icon-hamburger.svg" alt="">
   </nav>
 </header>
-<figure class="w-full h-[400px] bg-[url(/images/illustration-working.svg)] bg-no-repeat bg-size-[auto_20rem] bg-position-[center_left_2rem] bg-white"">
- 
-</figure>
-<section class="h-auto m-auto">
+<section class="h-auto m-auto md:flex md:flex-row-reverse md:items-center bg-white md:pl-4">
+  <figure class="w-full h-[400px] bg-[url(/images/illustration-working.svg)] bg-no-repeat bg-size-[auto_20rem] bg-position-[center_left_2rem] md:bg-right">
+   
+  </figure>
   <article class=" bg-white py-4">
     <h1 class="text-4xl text-center font-bold">More than just shorter links</h1>
     <p class="text-xl text-center text-gray-500 my-10 ">Build your brand's recognition and get detailed insights on how your links are performing.</p>
@@ -31,9 +31,9 @@
   </article>
 </section>
 <section class="w-5/6 m-auto z-10">
-  <form class="bg-[#232127] bg-[url(/images/bg-shorten-mobile.svg)] bg-no-repeat bg-cover  flex flex-col gap-3 justify-center bg-position-[center_left_5rem] my-8 rounded-md py-4" action="">
+  <form class="bg-[#232127] bg-[url(/images/bg-shorten-mobile.svg)] bg-no-repeat bg-cover  flex flex-col gap-3 justify-center bg-position-[center_left_5rem] my-8 rounded-md py-4 md:flex-row md:p-4" action="">
     <input class=" w-5/6 h-10 p-2 bg-white rounded-md m-auto" type="text" name="link" id="" placeholder="shorten a link here...">
-    <button class=" w-5/6 h-10 p-2 bg-teal-500 rounded-md m-auto text-white font-semibold" type="submit">Shorten It!</button>
+    <button class=" w-5/6 h-10 p-2 bg-teal-500 rounded-md m-auto text-white font-semibold md:w-1/4" type="submit">Shorten It!</button>
   </form>
   <article class="relative h-full">
     <!-- Título y descripción -->
@@ -46,10 +46,10 @@
     <div class="absolute left-1/2 top-45 w-2 h-[calc(70%-1rem)] bg-teal-500 -translate-x-1/2 -z-10 rounded"></div>
   
     <!-- Cards -->
-    <div class="my-20 bg-white p-5 rounded-md relative z-10">
-      <article class="relative pt-10">
+    <div class="my-20 bg-white p-5  rounded-md relative z-10 md:w-3/5 md:mx-auto">
+      <article class="relative pt-10 md:pt-15">
         <figure class="rounded-full bg-purple-950 p-4 absolute top-[-60px] left-1/2 -translate-x-1/2">
-          <img class="w-auto" src="images/icon-brand-recognition.svg" alt="">
+          <img class="w-auto md:w-15" src="images/icon-brand-recognition.svg" alt="">
         </figure>
         <h3 class="text-2xl font-bold text-center mt-0">Brand Recognition</h3>
         <p class="text-base text-center text-gray-500 my-5 font-medium">
@@ -58,10 +58,10 @@
       </article>
     </div>
   
-    <div class="my-20 bg-white p-5 rounded-md relative z-10">
-      <article class="relative pt-10">
+    <div class="my-20 bg-white p-5  rounded-md relative z-10 md:w-3/5 md:mx-auto">
+      <article class="relative pt-10 md:pt-15">
         <figure class="rounded-full bg-purple-950 p-4 absolute top-[-60px] left-1/2 -translate-x-1/2">
-          <img class="w-auto" src="images/icon-detailed-records.svg" alt="">
+          <img class="w-auto md:w-15" src="images/icon-detailed-records.svg" alt="">
         </figure>
         <h3 class="text-2xl font-bold text-center mt-0">Detailed Records</h3>
         <p class="text-base text-center text-gray-500 my-5 font-medium">
@@ -70,10 +70,10 @@
       </article>
     </div>
   
-    <div class="my-20 bg-white p-5 rounded-md relative z-10">
-      <article class="relative pt-10">
+    <div class="my-20 bg-white p-5  rounded-md relative z-10 md:w-3/5 md:mx-auto">
+      <article class="relative pt-10 md:pt-15">
         <figure class="rounded-full bg-purple-950 p-4 absolute top-[-60px] left-1/2 -translate-x-1/2">
-          <img class="w-auto" src="images/icon-fully-customizable.svg" alt="">
+          <img class="w-auto md:w-15" src="images/icon-fully-customizable.svg" alt="">
         </figure>
         <h3 class="text-2xl font-bold text-center mt-0">Fully Customizable</h3>
         <p class="text-base text-center text-gray-500 my-5 font-medium">
@@ -89,38 +89,41 @@
   <button class="py-4 bg-green-500 text-xl px-10 rounded-full m-auto text-white font-semibold">Get Started</button>
 </section>
 <footer class="w-full h-auto bg-[#232127] py-5">
-  <h4 class="text-center text-3xl  font-bold text-white">Shortly</h4>
-  <div class="w-full flex flex-col gap-3 mt-5 text-white">
-    <h5 class="text-center my-2 font-semibold text-lg">Features</h5>
-    <ul class="text-center text-gray-400">
-      <li class="my-2">Link Shortening</li>
-      <li class="my-2"> Branded Links</li>
-      <li class="my-2">Analytics</li>
-    </ul>
+  <h4 class="text-center text-3xl  font-bold text-white md:text-xl md:pr-12">Shortly</h4>
+  <div class="md:flex md:justify-evenly">
+
+    <div class="w-full flex flex-col gap-3 mt-5 text-white md:items-stretch">
+      <h5 class="text-center my-2 font-semibold text-lg">Features</h5>
+      <ul class="text-center text-gray-400">
+        <li class="my-2">Link Shortening</li>
+        <li class="my-2"> Branded Links</li>
+        <li class="my-2">Analytics</li>
+      </ul>
+    </div>
+    <div class="w-full flex flex-col gap-3 mt-5 text-white md:items-stretch">
+      <h5 class="text-center my-2 font-semibold text-lg">Resources</h5>
+      <ul class="text-center text-gray-400">
+        <li class="my-2">Blog</li>
+        <li class="my-2"> Developers</li>
+        <li class="my-2">Support</li>
+      </ul>
+    </div>
+    <div class="w-full flex flex-col gap-3 mt-5 text-white md:items-stretch">
+      <h5 class="text-center my-2 font-semibold text-lg ">Company</h5>
+      <ul class="text-center text-gray-400">
+        <li class="my-2">About</li>
+        <li class="my-2">Our Team</li>
+        <li class="my-2">Careers</li>
+        <li class="my-2">Contact</li>
+      </ul>
+    </div>
+    <figure class="flex  justify-center gap-4 my-4 md:flex-col md:gap-5 md:pr-6 md:m-0">
+      <img class="md:w-20" src="images/icon-facebook.svg" alt="">
+      <img class="md:w-20" src="images/icon-twitter.svg" alt="">
+      <img class="md:w-20" src="images/icon-pinterest.svg" alt="">
+      <img class="md:w-20" src="images/icon-instagram.svg" alt="">
+    </figure>
   </div>
-  <div class="w-full flex flex-col gap-3 mt-5 text-white">
-    <h5 class="text-center my-2 font-semibold text-lg">Resources</h5>
-    <ul class="text-center text-gray-400">
-      <li class="my-2">Blog</li>
-      <li class="my-2"> Developers</li>
-      <li class="my-2">Support</li>
-    </ul>
-  </div>
-  <div class="w-full flex flex-col gap-3 mt-5 text-white">
-    <h5 class="text-center my-2 font-semibold text-lg">Company</h5>
-    <ul class="text-center text-gray-400">
-      <li class="my-2">About</li>
-      <li class="my-2">Our Team</li>
-      <li class="my-2">Careers</li>
-      <li class="my-2">Contact</li>
-    </ul>
-  </div>
-  <figure class="flex  justify-center gap-4 my-4">
-    <img src="images/icon-facebook.svg" alt="">
-    <img src="images/icon-twitter.svg" alt="">
-    <img src="images/icon-pinterest.svg" alt="">
-    <img src="images/icon-instagram.svg" alt="">
-  </figure>
 </footer>
 </main>
 
