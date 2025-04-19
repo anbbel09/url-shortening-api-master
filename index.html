@@ -15,8 +15,23 @@
 <header class="h-auto m-auto bg-white py-7 px-3">
   <nav class="flex justify-between items-center p">
     <img class="w-1/4 md:w-1/6" src="images/logo.svg" alt="">
-    <img class="w-13" src="images/icon-hamburger.svg" alt="">
+    <img id="menu" class="w-13 cursor-pointer" src="images/icon-hamburger.svg" alt="">
   </nav>
+  <div id="menuCard" class="w-full mt-5 hidden">
+    <div class="bg-[#3b3054]  w-full rounded-lg p-4 font-semibold text-white text-lg text-center">
+      <ul class="flex flex-col gap-3 my-3">
+        <li class="cursor-pointer">Features</li>
+        <li class="cursor-pointer">Pricing</li>
+        <li class="cursor-pointer">Resources</li>
+      </ul>
+      <hr class="border-gray-500">
+      <div class="flex flex-col gap-4 my-3">
+        <button class="cursor-pointer">Login</button>
+        <button class="bg-teal-500 rounded-full w-full py-2 m-auto cursor-pointer">Sign Up</button>
+      </div>
+    </div>
+
+  </div>
 </header>
 <section class="h-auto m-auto md:flex md:flex-row-reverse md:items-center bg-white md:pl-4">
   <figure class="w-full h-[400px] bg-[url(/images/illustration-working.svg)] bg-no-repeat bg-size-[auto_20rem] bg-position-[center_left_2rem] md:bg-right">
@@ -31,10 +46,19 @@
   </article>
 </section>
 <section class="w-5/6 m-auto z-10">
-  <form class="bg-[#232127] bg-[url(/images/bg-shorten-mobile.svg)] bg-no-repeat bg-cover  flex flex-col gap-3 justify-center bg-position-[center_left_5rem] my-8 rounded-md py-4 md:flex-row md:p-4" action="">
-    <input class=" w-5/6 h-10 p-2 bg-white rounded-md m-auto" type="text" name="link" id="" placeholder="shorten a link here...">
-    <button class=" w-5/6 h-10 p-2 bg-teal-500 rounded-md m-auto text-white font-semibold md:w-1/4" type="submit">Shorten It!</button>
+  <form class="bg-[#232127] bg-[url(/images/bg-shorten-mobile.svg)] bg-no-repeat bg-cover  flex flex-col gap-3 justify-center bg-position-[center_left_5rem] my-8 rounded-md py-6 md:flex-row md:p-4" action="">
+    <input class=" w-5/6 h-10 p-2 bg-white rounded-md m-auto" type="text" name="link" id="inputLink" required  placeholder="shorten a link here...">
+    <p id="textRed" class="text-red-400 ml-7 text-sm hidden"> <i>Please add a link</i></p>
+    <button id="inputLinkBtn" class=" w-5/6 h-10 p-2 bg-teal-500 rounded-md m-auto text-white font-semibold md:w-1/4" type="submit">Shorten It!</button>
   </form>
+  <div id="shortenList" class="w-full ">
+    <!-- <p class="p-3">Link</p>
+    <hr class="border-gray-400">
+    <div class="p-3">
+      <p class="font-medium text-teal-500 my-2">link</p>
+      <button class="bg-teal-500 rounded-lg w-full py-2 m-auto cursor-pointer font-semibold text-white">Copy</button>
+    </div> -->
+  </div>
   <article class="relative h-full">
     <!-- Título y descripción -->
     <h2 class="text-3xl font-bold text-center">Advanced Statistics</h2>
