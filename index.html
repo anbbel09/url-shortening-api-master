@@ -13,9 +13,13 @@
 <body class="bg-gray-200 w-full h-auto">
 <main class="w-full h-screen m-auto">
 <header class="h-auto m-auto bg-white py-7 px-3">
-  <nav class="flex justify-between items-center p">
-    <img class="w-1/4 md:w-1/6" src="images/logo.svg" alt="">
-    <img id="menu" class="w-13 cursor-pointer" src="images/icon-hamburger.svg" alt="">
+  <nav class="flex justify-between items-center p lg:w-[58%]  lg:m-auto">
+    <img class="w-1/4 md:w-1/6 lg:w-1/12" src="images/logo.svg" alt="">
+    <img id="menu" class="w-13 cursor-pointer lg:hidden" src="images/icon-hamburger.svg" alt="">
+    <div class="flex justify-end w-full gap-4 my-3 font-semibold">
+      <button class="cursor-pointer">Login</button>
+      <button class="bg-teal-500 rounded-full w-1/12 py-2 text-white cursor-pointer">Sign Up</button>
+    </div>
   </nav>
   <div id="menuCard" class="w-full mt-5 hidden">
     <div class="bg-[#3b3054]  w-full rounded-lg p-4 font-semibold text-white text-lg text-center">
@@ -33,25 +37,28 @@
 
   </div>
 </header>
-<section class="h-auto m-auto md:flex md:flex-row-reverse md:items-center bg-white md:pl-4">
-  <figure class="w-full h-[400px] bg-[url(/images/illustration-working.svg)] bg-no-repeat bg-size-[auto_20rem] bg-position-[center_left_2rem] md:bg-right">
-   
-  </figure>
-  <article class=" bg-white py-4">
-    <h1 class="text-4xl text-center font-bold">More than just shorter links</h1>
-    <p class="text-xl text-center text-gray-500 my-10 ">Build your brand's recognition and get detailed insights on how your links are performing.</p>
-    <div class="flex justify-center">
-      <button class="py-4 bg-green-500 text-xl px-10 rounded-full m-auto text-white font-semibold">Get Started</button>
-    </div>
-  </article>
+<section class="h-auto  bg-white  ">
+  <div class="lg:w-[58%]  m-auto md:flex md:flex-row-reverse md:items-center md:pl-4 lg:justify-center lg:items-center">
+
+    <figure class="w-full h-[400px] bg-[url(/images/illustration-working.svg)] bg-no-repeat bg-size-[auto_20rem] bg-position-[center_left_2rem] md:bg-right lg:bg-size-[auto_25rem] ">
+     
+    </figure>
+    <article class=" bg-white py-4">
+      <h1 class="text-4xl text-center font-bold lg:text-start lg:text-6xl">More than just shorter links</h1>
+      <p class="text-xl text-center text-gray-500 my-10 lg:text-start lg:text-2xl">Build your brand's recognition and get detailed insights on how your links are performing.</p>
+      <div class="flex justify-center">
+        <button class="py-4 bg-green-500 text-xl px-10 rounded-full m-auto text-white font-semibold lg:ml-0">Get Started</button>
+      </div>
+    </article>
+  </div>
 </section>
-<section class="w-5/6 m-auto z-10">
-  <form class="bg-[#232127] bg-[url(/images/bg-shorten-mobile.svg)] bg-no-repeat bg-cover  flex flex-col gap-3 justify-center bg-position-[center_left_5rem] my-8 rounded-md py-6 md:flex-row md:p-4" action="">
-    <input class=" w-5/6 h-10 p-2 bg-white rounded-md m-auto" type="text" name="link" id="inputLink" required  placeholder="shorten a link here...">
+<section class="w-5/6 m-auto z-10 lg:w-3/4 lg:my-5">
+  <form class="bg-[#232127] bg-[url(/images/bg-shorten-mobile.svg)] bg-no-repeat bg-cover lg:w-3/4  lg:p-12 lg:m-auto  flex flex-col gap-3 justify-center bg-position-[center_left_5rem] my-8 rounded-md py-6 md:flex-row md:p-4" action="">
+    <input class=" w-5/6 h-10 p-2 bg-white rounded-md m-auto lg:h-14" type="text" name="link" id="inputLink" required  placeholder="shorten a link here...">
     <p id="textRed" class="text-red-400 ml-7 text-sm hidden"> <i>Please add a link</i></p>
-    <button id="inputLinkBtn" class=" w-5/6 h-10 p-2 bg-teal-500 rounded-md m-auto text-white font-semibold md:w-1/4" type="submit">Shorten It!</button>
+    <button id="inputLinkBtn" class=" w-5/6 h-10 p-2 bg-teal-500 rounded-md m-auto text-white font-semibold md:w-1/4 lg:h-14" type="submit">Shorten It!</button>
   </form>
-  <div id="shortenList" class="w-full ">
+  <div id="shortenList" class="w-full lg:w-3/4 lg:m-auto">
     <!-- <p class="p-3">Link</p>
     <hr class="border-gray-400">
     <div class="p-3">
@@ -59,7 +66,7 @@
       <button class="bg-teal-500 rounded-lg w-full py-2 m-auto cursor-pointer font-semibold text-white">Copy</button>
     </div> -->
   </div>
-  <article class="relative h-full">
+  <article class="relative h-full lg:my-10 lg:w-3/5 lg:m-auto">
     <!-- Título y descripción -->
     <h2 class="text-3xl font-bold text-center">Advanced Statistics</h2>
     <p class="text-lg text-center text-gray-500 my-5 font-medium">
@@ -112,9 +119,9 @@
   <h4 class="text-center text-2xl  font-bold text-white">Boost your links today</h4>
   <button class="py-4 bg-green-500 text-xl px-10 rounded-full m-auto text-white font-semibold">Get Started</button>
 </section>
-<footer class="w-full h-auto bg-[#232127] py-5">
+<footer class="w-full h-auto bg-[#232127] py-5 ">
   <h4 class="text-center text-3xl  font-bold text-white md:text-xl md:pr-12">Shortly</h4>
-  <div class="md:flex md:justify-evenly">
+  <div class="md:flex md:justify-evenly lg:w-[58%]  lg:m-auto">
 
     <div class="w-full flex flex-col gap-3 mt-5 text-white md:items-stretch">
       <h5 class="text-center my-2 font-semibold text-lg">Features</h5>
